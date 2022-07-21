@@ -1,132 +1,472 @@
-body{
+body {
     font-family: 'Poppins', sans-serif;
-    margin: 3%;
+
 }
 
-.header-container{
-    
+main,
+header {
+    margin: 3%;
+
+}
+
+
+
+
+/*************************************
+      ------Header styles ------ 
+**************************************/
+
+
+.header-container {
+
     background-color: black;
-    color:#FFFFFF;
+    color: #FFFFFF;
     border-radius: 10px;
     display: grid;
-    grid-template-columns:repeat(2,1fr);   
+    grid-template-columns: repeat(2, 1fr);
     padding-left: 2%;
 }
-h1{
-    width: 70%;
-    font-size: 3em;
-    font-weight: 700;
-    
+
+h1 {
+    font-size: 3rem;
 }
 
-.header-text{
+.header-text {
 
     margin: 3%;
     background-color: black;
-    color:#FFFFFF;
+    color: #FFFFFF;
     border-radius: 1em;
     padding-left: 2em;
-    font-size: 16px;
-    
-    
-    
-    
+    font-size: 1rem;
 }
-.header{
+
+.header {
     margin-top: 2vw;
     max-width: 600px;
     text-align: left;
 }
-.header-img{
-    max-width:30%;
+
+.header-img {
+    max-width: 30%;
     padding-left: 25%;
     padding-top: 2%;
     padding-right: 10px;
-  
+
 }
 
 
 
-.header-text a{
+
+.header-text a {
     text-decoration: none;
     color: #FFFFFF;
     border: 1px solid red;
     background-color: red;
-    padding:16px 25px;
+    padding: 16px 25px;
     border-radius: 5px;
 }
-/* Mobile screen media query */
-@media screen and (max-width: 768px){
-    body{
-        margin: 3%;
-    }
-    .header-text{
 
-        margin: 3%;
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding-top: 2%;
+}
+
+
+
+/***********************************
+    ---- Navigation styles ---- 
+***********************************/
+
+
+.nav-container {
+    display: flex;
+    height: 15%;
+    flex-direction: column;
+    background-color: black;
+    width: 60%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.nav-container>a {
+    text-decoration: none;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    padding: 10px 10px 10px;
+    border-radius: 5px;
+    font-size: medium;
+    color: black;
+
+}
+
+.nav-container>a:hover {
+    background-color: red;
+}
+
+
+/*****************************************
+    ------ Blog: video-link -------- 
+*****************************************/
+
+
+.video-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4%;
+    border: 1px solid rgb(215, 215, 215);
+    margin-top: 10px;
+
+
+}
+
+.link-span {
+    padding-top: 15px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+
+}
+
+.link a {
+    text-decoration: none;
+    border: 1px solid rgb(186, 178, 178);
+    border-radius: 3px;
+    color: rgb(86, 83, 83);
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.icons {
+    display: flex;
+    justify-content: left;
+    padding-bottom: 20px;
+    padding-left: 10px;
+
+
+}
+
+.fa-clock {
+    color: grey;
+    font-size: small;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+.chat {
+    width: 5px;
+    height: 17px;
+    font-style: normal;
+    font-size: 10px;
+    color: rgb(195, 188, 188);
+    display: flex;
+    justify-content: space-between;
+    font-weight: 10;
+    padding-left: 30px;
+
+
+}
+
+.view-all {
+    display: none;
+}
+
+
+/*****************************************
+      ------ Footer Section -------- 
+*****************************************/
+footer {
+    margin: 0%;
+}
+
+.footer {
+    background-color: black;
+    padding-top: 20px;
+
+}
+
+h2 {
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+hr {
+
+    width: 90em;
+    height: 0.01px;
+    font-size: small;
+    color: white
+}
+
+.footer-menu {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.menu {
+    padding-top: 15px;
+    padding-bottom: 4rem;
+    color: rgb(215, 210, 210);
+    text-decoration: none;
+    font-size: 10px;
+
+}
+
+
+
+
+
+/*****************************************
+      ------ Mobile Screen -------- 
+*****************************************/
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0%;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header{
+        width:100%;
+    }
+
+    .header-text {
         background-color: black;
-        color:#FFFFFF;
+        color: #FFFFFF;
         border-radius: 10px;
         padding-left: 30px;
-   
-        
+        text-align: center;
     }
-    h1{
+
+    h1 {
+        text-align: center;
         width: 50%;
         font-size: 3em;
         font-weight: 700;
-        
+
     }
-    .header-container{
+    #banner{
+        width: 325px;
+        height: 400px;
+    }
+
+    header>img {
+        width: auto;
+        height: auto;
+
+    }
+
+    .header-container {
         display: flex;
         flex-direction: column;
         gap: 2%;
+
     }
 
-    
+    .header {
+        padding-top: 5%;
+    }
+
+    .header-img {
+        padding-left: 0%;
+
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+        align-items: center;
+        padding: 0%;
+
+    }
+    .nav-container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+        background-color: #FFFFFF;
+
+
+    }
+    .nav-container a {
+        border: 1px solid rgb(199, 190, 190);
+        width: auto;
+        margin: 10px;
+
+    }
+    footer{
+        margin: 0%;
+        width:100%
+    }
+    hr{
+        width: 100%;
+        color: rgb(117, 104, 104);
+        border-style:solid;
+    }
+    .footer-menu {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        
+
+    }
+    .tablet {
+        display: contents;
+    }
+
+    .view-all {
+
+        display: none;
+
+    }
+
+
 }
-/* tablet screen */
-@media screen and (min-width: 769px) and (max-width: 1180px){
-    body{
+
+/********************************************
+       -------  Tablet Screen  ---------- 
+**********************************************/
+
+
+@media screen and (min-width: 769px) and (max-width: 1180px) {
+    body {
         margin: 0%;
     }
 
-    .header-container{
-        
-    display: grid;
-    grid-template-columns: repeat(10rem, 10em);
+    .header-container {
+
+        display: grid;
+        grid-template-columns: repeat(10rem, 10em);
     }
-    .header{
+
+    .header {
         padding-top: 2rem;
     }
-    header{
+
+    header {
         background-color: black;
-        margin: 2%;
         border-radius: 2%;
         padding-top: 1%;
     }
-    .header-text{
+
+    .header-text {
         font-size: 1rem;
         font-size: medium;
         text-align: center;
 
     }
-    h1{
+
+    h1 {
         text-align: center;
         font-size: 1.5rem;
     }
-    
 
-    .header-text a{
+
+    .header-text a {
         text-decoration: none;
         color: #FFFFFF;
         border: 1px solid red;
         background-color: red;
-        padding:10px 10px;
+        padding: 10px 10px;
         border-radius: 5px;
     }
-    .header-img{
+
+    .header-img {
         padding-left: 2%;
-      
+
     }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+        align-items: center;
+        padding: 0%;
+
+
+
+    }
+
+    .nav-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 0%;
+        background-color: #FFFFFF;
+
+
+    }
+
+    .nav-container a {
+        border: 1px solid rgb(199, 190, 190);
+        width: 300px;
+        margin: 10px;
+
+    }
+
+    .video-links {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1%;
+    }
+
+    .view-all {
+        display: contents;
+        text-align: center;
+        text-decoration: none;
+        background-color: red;
+        border-radius: 5px;
+        margin: 5px;
+
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .view-all {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        margin-left: 45%;
+
+
+    }
+
+    .view-all a {
+
+        text-decoration: none;
+        border: 1px solid red;
+        border-radius: 5px;
+        color: white;
+        background-color: red;
+
+    }
+
 
 }
