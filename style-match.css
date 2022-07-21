@@ -338,6 +338,11 @@ hr {
         margin: 10px;
 
     }
+    .video-links{
+        display: flex;
+        flex-direction: column;
+
+    }
     footer{
         margin: 0%;
         width:100%
